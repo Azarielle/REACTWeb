@@ -1,9 +1,10 @@
 .top-nav {
-    background-color: #BF3C4F;
+    background-color: #0B132B;
     text-align: center;
     padding: 2em;
     display: flex;
     justify-content: center;
+    color: #fff;
 }
 
 .nav-links {
@@ -11,4 +12,40 @@
     width: 35em;
     display: flex;
     justify-content: space-around;
+}
+
+.introduction-screen {
+    background-color: #6FFFE9;
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-grid-container {
+    background-color: #1C2541;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-grid {
+    width: 70em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.grid-item {
+    background-color: #46576B;
+    border: 1px solid #fff;
+    height: 10em;
+    width: 25em;
+    margin: 3em;
+}
+
+.introduction-text {
+    padding: 5em;
 }

@@ -21,7 +21,26 @@ class NavBar extends React.Component {
 class LandingScreen extends React.Component {
   render() {
     return (
-      <div class="introduction-screen">Hello</div>
+      <div class="introduction-screen">
+        <div class="introduction-text"> Hello, It is me. </div>
+      </div>
+    )
+  }
+}
+
+class AboutMe extends React.Component {
+  render() {
+    return (
+      <div class="about-me-grid-container">
+        <div class="about-me-grid">
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+        </div>
+      </div>
     )
   }
 }
@@ -31,6 +50,7 @@ function App() {
     <div>
       <LandingScreen />
       <NavBar />
+      <AboutMe />
     </div>
   )
 }
