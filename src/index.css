@@ -1,0 +1,14 @@
+.top-nav {
+    background-color: #BF3C4F;
+    text-align: center;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    border: 1px solid #fff;
+    width: 35em;
+    display: flex;
+    justify-content: space-around;
+}

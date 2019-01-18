@@ -1,27 +1,41 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import { randomFacts } from "./facts.js";
 
-function DisplayName() {
-  return <h1>Henry Nguyen</h1>;
-}
-
-function DisplayFacts() {
-  function getRandomIndex(array) {
-    return Math.floor(Math.random() * array.length);
+class NavBar extends React.Component {
+  render() {
+    return (
+      <div class="top-nav">
+        <div class="nav-links">
+          <div>Henry Nguyen</div>
+          <div href="#aboutme">About Me</div>
+          <div href="#github">Github</div>
+          <div href="#linkedin">LinkedIn</div>
+          <div class="contact-me">Contact Me</div>
+        </div>
+      </div>
+    )
   }
-
-  return <h2> {randomFacts[getRandomIndex(randomFacts)]} </h2>;
 }
 
-function site() {
+class LandingScreen extends React.Component {
+  render() {
+    return (
+      <div class="introduction-screen">Hello</div>
+    )
+  }
+}
+
+function App() {
   return (
     <div>
-      <DisplayName />
-      <DisplayFacts array="randomFacts" />
+      <LandingScreen />
+      <NavBar />
     </div>
-  );
+  )
 }
 
-ReactDOM.render(site(), document.getElementById("root"));
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
